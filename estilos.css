@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+h2{
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+main{
+    height: 700px;
+    width: 100%;
+    background-color: #000;
+}
+
+.nosotros{
+    height: auto;
+    background-color: gray;
+    width: auto;
+        
+}
+
+.nleft{
+    height: 300px;
+    width: 50%;
+    background-image: url(IMG/f1.jpg);
+}
+
+.galeria{
+    /* height: 700px; */
+    width: 100%;
+    background-color: brown;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(8, 200px);
+
+
+}
+.item{
+    background-size: 1020700px;
+    background-position: center;
+    border: 3px solid #000
+
+
+}
+.item:hover{
+    filter: grayscale(100%);
+}
+
+.item1{
+    background-image: url(IMG/f1.jpg);
+
+
+}
+.item2{
+    background-image: url(IMG/f2.jpg);
+}
+
+.item3{
+    background-image: url(IMG/f3.jpg);
+
+
+}
+.item4{
+    background-image: url(IMG/f4.jpg);
+}
+
+.item5{
+    background-image: url(IMG/f5.jpg);
+
+
+
+}
+.item6{
+    background-image: url(IMG/f6.jpg);
+}
+
+.item7{
+    background-image: url(IMG/f7.jpg);
+
+
+}
+.item8{
+    background-image: url(IMG/f8.jpg);
+}
+
+.footer{
+    background-color: salmon;
+    color: black    ;
+    text-align: center;
+}
+
+footer p{
+    font-size: 30px;
+
+}
+
+@media only screen and (min-width:480px){
+    .galeria{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
